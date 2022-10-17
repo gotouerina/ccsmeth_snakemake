@@ -1,7 +1,5 @@
 SampleIndex = {"golani"}
 ref = "golani.chr.fa"
-#kmc=/data/00/user/user214/miniconda3/envs/snakemake/bin/kmc
-#genomewcope=/data/00/user/user214/miniconda3/envs/snakemake/bin/genomescope2
 rule all:
     input:
         expand("{sample}.hifi.pbmm2.call_mods.modbam.freq", sample = SampleIndex)
